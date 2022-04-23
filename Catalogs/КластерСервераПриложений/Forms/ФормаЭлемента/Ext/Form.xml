@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПроверитьПодключение" id="36">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьПодключение</CommandName>
+				<ExtendedTooltip name="ПроверитьПодключениеРасширеннаяПодсказка" id="37"/>
+			</Button>
+			<Button name="ФормаПолучитьБазы_Отладка" id="47">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьБазы_Отладка</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьБазы_ОтладкаРасширеннаяПодсказка" id="48"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗагаловок" id="19">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗагаловокРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Font faceName="" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="ВерсияПлатформы" id="96">
+					<DataPath>Объект.ВерсияПлатформы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия</v8:content>
+						</v8:item>
+					</Title>
+					<Width>9</Width>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ВерсияПлатформыКонтекстноеМеню" id="97"/>
+					<ExtendedTooltip name="ВерсияПлатформыРасширеннаяПодсказка" id="98"/>
+				</InputField>
+				<CheckBoxField name="Защищен" id="23">
+					<DataPath>Объект.Защищен</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗащищенКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ЗащищенРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметры" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<Pages name="СтраницыФормы" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</Title>
+					<PagesRepresentation>TabsOnBottom</PagesRepresentation>
+					<ExtendedTooltip name="СтраницыФормыРасширеннаяПодсказка" id="88"/>
+					<ChildItems>
+						<Page name="СтраницаПараметры" id="89">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СтраницаПараметрыРасширеннаяПодсказка" id="90"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПодключение" id="75">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры подключения к серверу администрирования</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаПодключениеРасширеннаяПодсказка" id="76"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаАдресПорт" id="21">
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаАдресПортРасширеннаяПодсказка" id="22"/>
+											<ChildItems>
+												<RadioButtonField name="ТипПодключения" id="49">
+													<DataPath>Объект.ТипПодключения</DataPath>
+													<TitleLocation>Left</TitleLocation>
+													<RadioButtonType>Tumbler</RadioButtonType>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>RAS</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">RAS</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>COM</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">COM</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ТипПодключенияКонтекстноеМеню" id="50"/>
+													<ExtendedTooltip name="ТипПодключенияРасширеннаяПодсказка" id="51"/>
+													<Events>
+														<Event name="OnChange">ТипПодключенияПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<InputField name="ПортКластера" id="52">
+													<DataPath>Объект.ПортКластера</DataPath>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>1541</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ContextMenu name="ПортКластераКонтекстноеМеню" id="53"/>
+													<ExtendedTooltip name="ПортКластераРасширеннаяПодсказка" id="54"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<Pages name="ГруппаАдресИПорт" id="55">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес и порт</v8:content>
+												</v8:item>
+											</Title>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="ГруппаАдресИПортРасширеннаяПодсказка" id="56"/>
+											<ChildItems>
+												<Page name="СтраницаПодключениеRAS" id="57">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа1</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="СтраницаПодключениеRASРасширеннаяПодсказка" id="58"/>
+													<ChildItems>
+														<InputField name="АдресСервераАдминистрирования" id="61">
+															<DataPath>Объект.АдресСервераАдминистрирования</DataPath>
+															<ContextMenu name="АдресСервераАдминистрированияКонтекстноеМеню" id="62"/>
+															<ExtendedTooltip name="АдресСервераАдминистрированияРасширеннаяПодсказка" id="63"/>
+														</InputField>
+														<InputField name="ПортСервераАдминистрирования" id="64">
+															<DataPath>Объект.ПортСервераАдминистрирования</DataPath>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>1545</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПортСервераАдминистрированияКонтекстноеМеню" id="65"/>
+															<ExtendedTooltip name="ПортСервераАдминистрированияРасширеннаяПодсказка" id="66"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+												<Page name="СтраницаПодключениеCOM" id="59">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа1</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="СтраницаПодключениеCOMРасширеннаяПодсказка" id="60"/>
+													<ChildItems>
+														<InputField name="АдресАгентаСервера" id="67">
+															<DataPath>Объект.АдресАгентаСервера</DataPath>
+															<ContextMenu name="АдресАгентаСервераКонтекстноеМеню" id="68"/>
+															<ExtendedTooltip name="АдресАгентаСервераРасширеннаяПодсказка" id="69"/>
+														</InputField>
+														<InputField name="ПортАгентаСервера" id="70">
+															<DataPath>Объект.ПортАгентаСервера</DataPath>
+															<ContextMenu name="ПортАгентаСервераКонтекстноеМеню" id="71"/>
+															<ExtendedTooltip name="ПортАгентаСервераРасширеннаяПодсказка" id="72"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<LabelField name="ИмяКомпьютера" id="44">
+											<DataPath>ИмяКомпьютера</DataPath>
+											<ContextMenu name="ИмяКомпьютераКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ИмяКомпьютераРасширеннаяПодсказка" id="46"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаАутентификация" id="79">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Администратор центрального сервера</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаАутентификацияРасширеннаяПодсказка" id="80"/>
+									<ChildItems>
+										<InputField name="ИмяАдминистратораКластера" id="81">
+											<DataPath>Объект.ИмяАдминистратораКластера</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ИмяАдминистратораКластераКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="ИмяАдминистратораКластераРасширеннаяПодсказка" id="83"/>
+										</InputField>
+										<InputField name="ПарольАдминистратораКластера" id="84">
+											<DataPath>Объект.ПарольАдминистратораКластера</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пароль</v8:content>
+												</v8:item>
+											</Title>
+											<PasswordMode>true</PasswordMode>
+											<ContextMenu name="ПарольАдминистратораКластераКонтекстноеМеню" id="85"/>
+											<ExtendedTooltip name="ПарольАдминистратораКластераРасширеннаяПодсказка" id="86"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаОписание" id="77">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Описание</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СтраницаОписаниеРасширеннаяПодсказка" id="78"/>
+							<ChildItems>
+								<InputField name="Описание" id="28">
+									<DataPath>Объект.Описание</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ОписаниеКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="30"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаИнформация" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информация</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СтраницаИнформацияРасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<SpreadSheetDocumentField name="ТаблицаСводнойИнформации" id="93">
+									<DataPath>ТаблицаСводнойИнформации</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<BorderColor>style:FormBackColor</BorderColor>
+									<ContextMenu name="ТаблицаСводнойИнформацииКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ТаблицаСводнойИнформацииРасширеннаяПодсказка" id="95"/>
+								</SpreadSheetDocumentField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.КластерСервераПриложений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИмяКомпьютера" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя компьютера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаСводнойИнформации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица сводной информации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьПодключение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПолучитьИдентификатор</Action>
+		</Command>
+		<Command name="ПолучитьБазы_Отладка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить базы отладка</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПолучитьБазы_Отладка</Action>
+		</Command>
+	</Commands>
+</Form>

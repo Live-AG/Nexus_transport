@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСправочникИнформационныеБазыЗапуститьБазу" id="33">
+				<Type>CommandBarButton</Type>
+				<CommandName>Catalog.ИнформационныеБазы.Command.ЗапуститьПредприятие</CommandName>
+				<ExtendedTooltip name="ФормаСправочникИнформационныеБазыЗапуститьБазуРасширеннаяПодсказка" id="34"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Конфигурация" id="7">
+			<DataPath>Объект.Конфигурация</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КонфигурацияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="НазначениеИБ" id="10">
+			<DataPath>Объект.НазначениеИБ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НазначениеИБКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НазначениеИБРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="СерверБД" id="13">
+			<DataPath>Объект.СерверБД</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СерверБДКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СерверБДРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Сервер1С" id="16">
+			<DataPath>Объект.Сервер1С</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="Сервер1СКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="Сервер1СРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ИмяНаСервереБД" id="19">
+			<DataPath>Объект.ИмяНаСервереБД</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИмяНаСервереБДКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ИмяНаСервереБДРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ИмяНаСервере1С" id="22">
+			<DataPath>Объект.ИмяНаСервере1С</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИмяНаСервере1СКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ИмяНаСервере1СРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="Проект" id="35">
+			<DataPath>Объект.Проект</DataPath>
+			<ContextMenu name="ПроектКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="Ответственный" id="38">
+			<DataPath>Объект.Ответственный</DataPath>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="Описание" id="28">
+			<DataPath>Объект.Описание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="30"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ИнформационныеБазы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

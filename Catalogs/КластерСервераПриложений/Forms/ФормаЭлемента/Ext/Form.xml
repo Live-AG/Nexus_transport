@@ -23,7 +23,6 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаЗагаловок" id="19">
-			<Group>AlwaysHorizontal</Group>
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -35,19 +34,6 @@
 					<Font faceName="" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-				</InputField>
-				<InputField name="ВерсияПлатформы" id="96">
-					<DataPath>Объект.ВерсияПлатформы</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Версия</v8:content>
-						</v8:item>
-					</Title>
-					<Width>9</Width>
-					<OpenButton>false</OpenButton>
-					<ContextMenu name="ВерсияПлатформыКонтекстноеМеню" id="97"/>
-					<ExtendedTooltip name="ВерсияПлатформыРасширеннаяПодсказка" id="98"/>
 				</InputField>
 				<CheckBoxField name="Защищен" id="23">
 					<DataPath>Объект.Защищен</DataPath>
@@ -267,6 +253,28 @@
 								</UsualGroup>
 							</ChildItems>
 						</Page>
+						<Page name="СтраницаИнформация" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информация</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СтраницаИнформацияРасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<SpreadSheetDocumentField name="ТаблицаСводнойИнформации" id="93">
+									<DataPath>ТаблицаСводнойИнформации</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<SelectionShowMode>DontShow</SelectionShowMode>
+									<BorderColor>style:FormBackColor</BorderColor>
+									<ContextMenu name="ТаблицаСводнойИнформацииКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ТаблицаСводнойИнформацииРасширеннаяПодсказка" id="95"/>
+									<Events>
+										<Event name="DetailProcessing">ТаблицаСводнойИнформацииОбработкаРасшифровки</Event>
+									</Events>
+								</SpreadSheetDocumentField>
+							</ChildItems>
+						</Page>
 						<Page name="СтраницаОписание" id="77">
 							<Title>
 								<v8:item>
@@ -284,24 +292,6 @@
 									<ContextMenu name="ОписаниеКонтекстноеМеню" id="29"/>
 									<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="30"/>
 								</InputField>
-							</ChildItems>
-						</Page>
-						<Page name="СтраницаИнформация" id="91">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Информация</v8:content>
-								</v8:item>
-							</Title>
-							<ExtendedTooltip name="СтраницаИнформацияРасширеннаяПодсказка" id="92"/>
-							<ChildItems>
-								<SpreadSheetDocumentField name="ТаблицаСводнойИнформации" id="93">
-									<DataPath>ТаблицаСводнойИнформации</DataPath>
-									<TitleLocation>None</TitleLocation>
-									<BorderColor>style:FormBackColor</BorderColor>
-									<ContextMenu name="ТаблицаСводнойИнформацииКонтекстноеМеню" id="94"/>
-									<ExtendedTooltip name="ТаблицаСводнойИнформацииРасширеннаяПодсказка" id="95"/>
-								</SpreadSheetDocumentField>
 							</ChildItems>
 						</Page>
 					</ChildItems>

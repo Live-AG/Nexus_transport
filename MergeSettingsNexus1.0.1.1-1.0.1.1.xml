@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.3/config/merge/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" platformVersion="8.3.11">
+	<MainConfiguration>
+		<Name>Nexus</Name>
+		<Version>1.0.1.1</Version>
+	</MainConfiguration>
+	<SecondConfiguration>
+		<Name>Nexus</Name>
+		<Version>1.0.1.1</Version>
+	</SecondConfiguration>
+	<Parameters>
+		<ConfigurationsRelation>ConfigurationsNotRelated</ConfigurationsRelation>
+		<AllowMainConfigurationObjectDeletion>false</AllowMainConfigurationObjectDeletion>
+		<CopyObjectsMode>false</CopyObjectsMode>
+	</Parameters>
+	<Objects>
+		<Configuration>
+			<Properties>
+				<Property name="MainSectionPicture">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Configuration>
+		<Object fullNameInSecondConfiguration="Subsystem.ТестПодсистема">
+			<MergeRule>DoNotMerge</MergeRule>
+		</Object>
+		<Object fullName="Style.ТемныйСтиль">
+			<Properties>
+				<Property name="Style">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonModule.АдминистрированиеИнформационныхБаз">
+			<Properties>
+				<Property name="Module">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ИнформационныеБазы.Form.ФормаЭлемента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>GetFromSecondConfiguration</MergeRule>
+					<FormModule>
+						<MergeRule>GetFromSecondConfiguration</MergeRule>
+						<Module>
+							<Methods>
+								<MainArea>
+									<MergeRule>GetFromSecondConfiguration</MergeRule>
+									<Patch/>
+								</MainArea>
+								<Method name="ПослеЗаписи">
+									<MergeRule>DoNotMerge</MergeRule>
+								</Method>
+								<Method name="ПриСозданииНаСервере">
+									<MergeRule>DoNotMerge</MergeRule>
+								</Method>
+							</Methods>
+						</Module>
+					</FormModule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="DataProcessor.МониторИнформационныхБаз.Form.ФормаМонитора">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+	</Objects>
+</Settings>

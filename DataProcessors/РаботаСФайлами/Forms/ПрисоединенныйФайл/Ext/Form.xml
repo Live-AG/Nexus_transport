@@ -2265,7 +2265,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0:346cb8b7-a20e-4a06-823e-26dfb2e3e741</Command>
+				<Command>0</Command>
 				<Type>Added</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
@@ -2278,7 +2278,7 @@
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>0:52e0ede7-de57-4640-b432-96e56131f277</Command>
+				<Command>0</Command>
 				<Type>Added</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>2</Index>

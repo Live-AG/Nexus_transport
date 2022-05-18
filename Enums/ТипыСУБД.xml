@@ -62,6 +62,30 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="2f7b6ae5-87db-4796-983a-c97b2c2a557e">
+				<Properties>
+					<Name>IBMDB2</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>IBM DB2</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e21639e0-8c0b-44c9-bdd4-f9fdcaf9f92a">
+				<Properties>
+					<Name>OracleDatabase</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Oracle Database</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

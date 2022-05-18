@@ -13,12 +13,16 @@
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
-			<Picture/>
+			<Picture>
+				<xr:Ref>CommonPicture.Кластер</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИнформационныеБазы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КластерСервераПриложений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проекты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВерсииПлатформы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВерсииКонфигураций</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

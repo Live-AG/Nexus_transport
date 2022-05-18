@@ -7,10 +7,10 @@
 		<Color>#5E9E9E</Color>
 	</Item>
 	<Item name="NavigationColor">
-		<Color>web:Gray</Color>
+		<Color>web:DarkGray</Color>
 	</Item>
 	<Item name="AuxiliaryNavigationColor">
-		<Color>web:DarkGray</Color>
+		<Color>web:LightGray</Color>
 	</Item>
 	<Item name="ImportantColor">
 		<Color>web:LightBlue</Color>

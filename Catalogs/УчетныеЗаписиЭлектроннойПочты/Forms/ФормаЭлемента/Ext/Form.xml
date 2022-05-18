@@ -909,7 +909,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>0:56b570b1-93b0-468a-9672-9c71113753f3</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

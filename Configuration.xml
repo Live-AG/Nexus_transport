@@ -223,7 +223,6 @@
 			<Subsystem>Администрирование</Subsystem>
 			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
-			<Subsystem>ТестПодсистема</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВладелецФайловШрифт</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовВажнаяШрифт</StyleItem>
@@ -550,6 +549,9 @@
 			<CommonPicture>ЭлектронноеПисьмоВходящее</CommonPicture>
 			<CommonPicture>ЭлектронноеПисьмоИсходящее</CommonPicture>
 			<CommonPicture>ЯндексКарты</CommonPicture>
+			<CommonPicture>Сервер</CommonPicture>
+			<CommonPicture>Кластер</CommonPicture>
+			<CommonPicture>БазаДанных</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
@@ -875,6 +877,7 @@
 			<CommonModule>ШаблоныСообщенийСлужебный</CommonModule>
 			<CommonModule>ШаблоныСообщенийСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыБСПNexus</CommonModule>
+			<CommonModule>АдминистрированиеИнформационныхБаз</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApplicationExtensionsManifest_1_0_0_1</XDTOPackage>
 			<XDTOPackage>ApplicationExtensionsPermissions_1_0_0_1</XDTOPackage>
@@ -1194,6 +1197,7 @@
 			<Catalog>Скрипты</Catalog>
 			<Catalog>Проекты</Catalog>
 			<Catalog>ВерсииПлатформы</Catalog>
+			<Catalog>ВерсииКонфигураций</Catalog>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
 			<Document>СообщениеSMS</Document>
@@ -1251,6 +1255,7 @@
 			<Enum>ФорматыХраненияОдностраничныхФайлов</Enum>
 			<Enum>ЦветаЗаметок</Enum>
 			<Enum>ЦветностиИзображения</Enum>
+			<Enum>СостоянияЭлементовКластера</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>ОбъемНенужныхФайлов</Report>
@@ -1283,6 +1288,7 @@
 			<DataProcessor>Сканирование</DataProcessor>
 			<DataProcessor>ТекущиеДела</DataProcessor>
 			<DataProcessor>УдалениеПомеченныхОбъектов</DataProcessor>
+			<DataProcessor>МониторИнформационныхБаз</DataProcessor>
 			<InformationRegister>СоответствиеПользователейИБ</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
